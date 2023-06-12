@@ -6,6 +6,7 @@
   --hover-color: #404bbf;
   --logolike-color: #4d5ae5;
   --border-color: #e7e9fc;
+  --customer-color: #8e8f99;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -127,10 +128,15 @@ nav {
 /* main styling index*/
 /*section 1 index SOLUTIONS*/
 .solutions {
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg), no-repeat;
   background-color: var(--accent-color);
   text-align: center;
   padding: 188px 0;
+  width: 1440px;
+  margin: 0 auto;
 }
+
 .solutions-title {
   font-size: 56px;
   line-height: 1.07;
@@ -172,6 +178,20 @@ nav {
 .values-list-item {
   flex-basis: calc((100% - 72px) / 4);
 }
+
+.box-for-icon {
+  width: 264px;
+  height: 112px;
+  background: var(--greyish-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.icon {
+  display: block;
+  margin: auto;
+  height: 100%;
+}
 .values-title {
   font-weight: 500;
   font-size: 20px;
@@ -190,7 +210,7 @@ nav {
 .what-we-do {
   padding-bottom: 120px;
 }
-.what-we-do-title {
+.htitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -218,9 +238,6 @@ nav {
 .index-team {
 }
 
-.team-title {
-  margin-bottom: 72px;
-}
 .team-card {
   background-color: var(--whity-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -233,15 +250,6 @@ nav {
   gap: 24px;
 }
 .pic-team {
-}
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--accent-color);
 }
 
 .team-card-txt {
@@ -264,6 +272,42 @@ nav {
   text-align: center;
   letter-spacing: 0.02em;
 }
+.social-list {
+  display: flex;
+  gap: 24px;
+  padding: 8px 16px 32px 16px;
+}
+.social-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--logolike-color);
+}
+
+.social-team-icon {
+  fill: var(--whity-color);
+}
+
+/*section 5 index */
+.index-customers {
+  padding: 120px 0;
+}
+.customers-box {
+  height: 88px;
+  border: 1px solid var(--customer-color);
+  border-radius: 4px;
+}
+
+.customers-list-item {
+  width: calc((100% - 120px) / 6);
+}
+.customers-icon {
+  fill: var(--customer-color);
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
 /* footer */
 .bottom {
   background-color: var(--accent-color);
@@ -279,9 +323,27 @@ nav {
   color: var(--greyish-color);
   max-width: 264px;
 }
-.index-footer .logo {
+.index-footer .par1footer .logo {
   display: inline-block;
   margin-bottom: 16px;
+}
+.footer-list {
+  display: flex;
+  gap: 120px;
+}
+.social-bottom {
+  padding: 0;
+}
+.index-footer {
+}
+
+.social-media-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--whity-color);
+  padding-bottom: 16px;
 }
 /* main styling portfolio */
 
