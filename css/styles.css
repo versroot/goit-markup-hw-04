@@ -335,11 +335,14 @@ nav {
 }
 
 /*section 5 index */
-.index-customers {
+.customers {
   padding: 120px 0;
 }
+
+.customers-list-item
+{height: 88px;}
 .customers-box {
-  height: 88px;
+  height: 100%;
   border: 1px solid var(--customer-color);
   border-radius: 4px;
   transition: border-color 250ms;
@@ -349,6 +352,7 @@ nav {
   align-items: center;
 }
 .customer-icon {
+  fill:currentColor;
   transition: fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
