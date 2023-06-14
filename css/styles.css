@@ -256,15 +256,13 @@ nav {
 .what-we-do-list-item {
   flex-basis: calc((100% - 48px) / 3);
 }
-.pic-what-we-do {
-}
+
 /*section 4 index*/
 .team {
   background-color: var(--greyish-color);
   padding: 120px 0;
 }
-.index-team {
-}
+
 
 .team-card {
   background-color: var(--whity-color);
@@ -276,8 +274,6 @@ nav {
 .team-card-list {
   display: flex;
   gap: 24px;
-}
-.pic-team {
 }
 
 .team-card-txt {
@@ -338,46 +334,51 @@ nav {
 .customers {
   padding: 120px 0;
 }
-
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
 .customers-list-item
-{height: 88px;}
+{height: 88px;
+width: calc((100% - 120px) / 6);
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 .customers-box {
   height: 100%;
   border: 1px solid var(--customer-color);
   border-radius: 4px;
-  transition: border-color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display:flex;
   justify-content: center;
   align-items: center;
   color:var(--customer-color);
 }
-.customer-icon {
+.customes-icon {
   fill: currentColor;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .customers-box:hover,
 .customers-box:focus {
- {
-  border-color: var(--hover-color);
+   border-color:var(--hover-color); 
   color:var(--hover-color);
 }
 
-.customers-list-item {
-  width: calc((100% - 120px) / 6);
-}
+
 .customers-icon {
-  fill: var(--customer-color);
+  fill: currentColor;
 }
-.customers-list {
-  display: flex;
-  gap: 24px;
-}
+
 /* footer */
 .bottom {
   background-color: var(--accent-color);
   padding: 100px 0;
+}
+.index-footer {
+  display: flex;
+  align-items: baseline;
+}
+.par1footer
+{
+  margin-right: 120px;
 }
 .logo-studio-footer {
   color: var(--greyish-color);
@@ -389,25 +390,16 @@ nav {
   color: var(--greyish-color);
   max-width: 264px;
 }
-/* .index-footer .par1footer .logo {
-  display: inline-block;
-  margin-bottom: 16px;
-} */
-.footer-list {
-  display: flex;
-  gap: 120px;
-}
+
 .social-bottom {
   padding: 0;
+  gap: 16px;
 }
 .bottom-circle:hover,
-.bottom-circle:active {
+.bottom-circle:focus {
   background-color: var(--social-green);
 }
-.index-footer {
-  display: flex;
-  align-items: baseline;
-}
+
 
 .social-media-title {
   font-weight: 500;
@@ -415,7 +407,7 @@ nav {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--whity-color);
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 /* main styling portfolio */
 
