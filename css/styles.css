@@ -473,29 +473,27 @@ portfolio-card:focus {
   overflow: hidden;
 }
 
-.bluebox {
-  position: absolute;
-  width: 360px;
-  top: 0;
-  left: 0;
-  background-color: var(--logolike-color);
-  height: 100%;
-  transform: translateY(100%);
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.portfolio-card:hover .bluebox,
-.portfolio-card:focus .bluebox {
+
+.portfolio-card:hover .bluebox-text,
+.portfolio-card:focus .bluebox-text {
   transform: translateY(0);
 }
 
 .bluebox-text {
+    position: absolute;
+  top: 0;
+ 
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--greyish-color);
   padding: 40px 32px;
+  background-color: var(--logolike-color);
+  height: 100%;
+  width: 100%;
+    transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item-txt {
   padding: 32px 16px;
