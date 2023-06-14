@@ -66,7 +66,7 @@
           <h1 class="solutions-title">Effective Solutions for Your Business</h1>
           <button
             type="button"
-            onclick="data-modal-open"
+            onclick="[data-modal-open]"
             class="solutions-button"
           >
             Order Service
@@ -445,6 +445,10 @@
         </div>
       </div>
     </footer>
+    <div class="modal is-hidden" id="data-modal" data-modal>
+      <div class="modal-window"></div>
+    </div>
+    <div class="backdrop"></div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
